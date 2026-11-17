@@ -1,0 +1,131 @@
+/* regras gerais */
+* {
+    box-sizing: border-box;
+    font-family: 'roboto';
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url(fonts/roboto.ttf);
+}
+
+header {
+    background: #482e21;
+    border-radius: 0 30px 0 30px;
+    padding: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+
+}
+
+main {
+    background: #e4e0de;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+}
+
+body {
+    margin: 0;
+    background-color: #a77c66;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #7c6549;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+td {
+    padding: 5px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+img,
+iframe {
+    width: 450px;
+    height: 320px;
+    border: 3px solid #a56748;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 0 10px;
+}
+
+footer {
+    background: #482e21;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+h1,
+h2 {
+    color: #25130a;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+h1 {
+    text-shadow: 2px 2px 2px;
+}
+
+h2 {
+    color: white;
+    background-color: #7c6549;
+    border-radius: 5px;
+}
+
+/* css da pagina index */
+
+figure {
+    text-align: center;
+    background-color: #a56748;
+    font-weight: bolder;
+}
+
+
+#receitas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#receitas img {
+    width: 100% !important;
+    height: 170px;
+    margin: 0;
+}
+
+figure a {
+    text-decoration: none;
+    color: #fff;
+}
+
+figcaption {
+    padding: 4px;
+}
+
+/* final do css do index */
