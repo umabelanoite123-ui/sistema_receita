@@ -6,6 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.arrows.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.dots.css" />
+
 </head>
 
 <body>
@@ -45,15 +50,21 @@
         </section>
 
         <section id="midias">
-            <iframe src="https://www.youtube.com/embed/4buOsywE3f8" title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-
-
 
 
             <img src="img/bolo-cenoura-chocolate.jpg"
                 alt="Uma imagem de um bolo de cenoura com cobertura de chocolate.">
+
+            <div class="f-carousel" id="myCarousel">
+                <div class="f-carousel__slide"><img src="img/bolo_fofinho_cenoura.jfif" alt="Bolo fofinho de cenoura com cobertura de chocolate"></div>
+                <div class="f-carousel__slide"><img src="img/bolo_cobertura_cenoura_simples.jfif" alt="Bolo de cenoura simples com cobertura de chocolate"></div>
+                <div class="f-carousel__slide"><img src="img/bolo_de_cenoura_full_cobertura.jpg" alt="Bolo de cenoura com muita cobertura de chocolate"></div>
+            </div>
+
+            <iframe src="https://www.youtube.com/embed/4buOsywE3f8" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
         </section>
 
         <section id="Ingredientes">
@@ -126,6 +137,18 @@
     <footer>
         <p>Direitos autorais 2026</p>
     </footer>
+ 
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.arrows.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.dots.umd.js"></script>
+    <script>
+      Carousel(document.getElementById("myCarousel"), {
+        // Your custom options
+      }, {
+        Arrows,
+        Dots
+      }).init();
+    </script>
 
 </body>
 
