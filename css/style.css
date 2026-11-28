@@ -9,10 +9,23 @@
     src: url(../fonts/roboto.ttf);
 }
 
-#titulo {background-image:url(../img/banner_bolo_cenoura.webp);
+#titulo {background-image:url(../img/banner_bolo_cenoura.jpg);
 height: 20vh;
 background-repeat: no-repeat;
+display: flex;
+justify-content: center;
+align-items: center;
+background-size: cover;
+background-attachment: fixed;
 }
+
+#titulo h1 {text-shadow: 2px 2px 6px #fff;
+background-color: #482E21;
+padding: 5px;    
+/* width: 100%;*/
+
+
+} 
 
 
 header {
@@ -39,6 +52,7 @@ main {
     width: 1000px;
     margin: 0 auto;
     padding: 0 10px;
+    padding-top: 8px;
     padding-bottom: 2px;
     margin-bottom: 10px;
 }
